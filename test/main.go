@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/alex210501/borbo.io/ds"
+)
 
 func main() {
-	fmt.Println("In test")
+	person := ds.DataStucture{Name: "Alejandro", Age: 15}
+
+	fmt.Printf("%v", person)
 }
