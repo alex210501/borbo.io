@@ -7,6 +7,6 @@ type DataStucture struct {
 	Age  int
 }
 
-func (d *DataStucture) String() string {
+func (d DataStucture) String() string {
 	return fmt.Sprintf("%v (%v years)", d.Name, d.Age)
 }
