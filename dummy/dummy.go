@@ -1,7 +1,17 @@
 package dummy
 
-import "fmt"
+import (
+	"fmt"
+	"io"
+	"os"
+)
+
+var out io.Writer = os.Stdout
 
 func SayHellWorld() {
-	fmt.Println("hello world")
+	fmt.Fprint(out, "hello world")
+}
+
+func StringToWrite() {
+	fmt.Fprint(out, stringToWrite)
 }
